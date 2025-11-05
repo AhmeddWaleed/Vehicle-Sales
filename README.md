@@ -1,68 +1,55 @@
-# Vehicle-Sales
+# Vehicle-Sales (MySQL & Power BI)
 
 
-[Power BI Dashboard](https://app.powerbi.com/links/H-Mchqzwym?ctid=83204133-f2b0-489f-a81c-5442d32fc343&pbi_source=linkShare)
-
-
-
-
-This project analyzes this data to uncover insights on customer behaviour, sales trends, product performance, and regional profitability.  
-It aims to help businesses make data-driven decisions by understanding which products and regions drive the most sales.
+This project analyzes **car sales data** using **SQL** to uncover valuable business insights.  
+The goal is to explore trends in car prices, total sales, and market performance  — helping car dealerships make data-driven decisions by understanding which car make, model and regions drive the most sales.
 
 
 ## **Project Objective**
 
-- Identify top-performing and underperforming products  
-- Analyze regional sales trends   
+- Identify **top-selling car brands** and models.
+- Analyze **sales performance by region and seller**.
+- Calculate **monthly sales**.
+- Find **average selling price**.
 
 
 ## Dataset
 
-- **Source**: [Kaggle – Customer Shopping (Latest Trends) Dataset](https://www.kaggle.com/datasets/bhadramohit/customer-shopping-latest-trends-dataset)
+- **Source**: [Kaggle – Vehicle Sales Data](https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data)
 
-## **Tools & Technologies Used**
 
-- **Python**: Pandas, Matplotlib
-- **Jupyter Notebook**: Exploratory Data Analysis (EDA)
-- **Power BI**: Dashboard and data visualization  
+## **Tools Used**
+
+- **SQL**
+- **Power BI**: Dashboard and data visualization
 
 
 ## Methodology
 
 1. **Data Cleaning**
-   - Removed duplicates and null values  
+   - Removed duplicates and null values.
+   - Delete records where most essential columns are blank , Replace blanks with “Unknown” (non-critical fields).
+   - Converted date column to date type , splitting the new date column into date column & hours column.
+   -  Standardizing  the make name.
   
-
 2. **Exploratory Data Analysis (EDA)**
-   - Analyzed sales by region, product category, and time period  
-   - Examined profit margins and discount effects  
-   - Identified seasonal patterns and sales peaks  
+   - Analyzed sales by make, model, seller and regions.  
+   - Examined sales trends.
+   - Examined monthly sales.
 
 3. **Visualization**
-   - Created bar charts, line plots, and pie charts for better insight communication  
-   - Built an interactive Power BI dashboard
-
-4. **Insight Generation**
-   - Derived key performance indicators (KPIs)  
-   - Summarized findings and suggested improvements
+   - Created bar charts, line plots, and pie charts for better insight communication.
+   - Built an interactive Power BI dashboard.
 
 
 ##  Visualization
 
-[Power BI Dashboard](https://app.powerbi.com/links/d9Ff5CaF_J?ctid=83204133-f2b0-489f-a81c-5442d32fc343&pbi_source=linkShare)
+[Power BI Dashboard](https://app.powerbi.com/links/H-Mchqzwym?ctid=83204133-f2b0-489f-a81c-5442d32fc343&pbi_source=linkShare)
 
 
 ## Key Insights
 
-- **The West region** generated the highest total sales (≈42% of total revenue)  
-- **High discounts (>20%)** reduced profit margins significantly  
-- **November–December** were peak sales months due to holiday promotions  
-- **Office Supplies** had high sales volume but lower profitability compared to Furniture  
-
-
-## Recommendations
-
-- Optimize discount strategy to balance sales and profit  
-- Focus marketing on high-profit regions and categories  
-- Consider bundling low-profit items with top sellers  
-- Increase inventory before the holiday season to meet demand  
+- **Ford** make generated the highest total sales ( 1353 Million ).
+- **F-150** model are the top-performing properties ( 270 Million ).
+- **Feb 2015** is the most profitable ( 2185 Million ).
+- **Ford motor credit company llc** performed best.
