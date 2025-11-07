@@ -20,7 +20,7 @@ The goal is to explore trends in car prices, total sales, and market performance
 1. **Data Cleaning**
    - Removed duplicates and null values.
    - Delete records where most essential columns are blank , Replace blanks with “Unknown” (non-critical fields).
-   - Converted date column to date type , splitting the new date column into date column & hours column.
+   - Converted date column to date type , splitting the new date column into date column & time column.
    -  Standardizing  the make name.
   
 2. **Exploratory Data Analysis (EDA)**
